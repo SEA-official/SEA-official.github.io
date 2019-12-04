@@ -1,9 +1,50 @@
-.box1{
-    font-family: "苹方 常规",冬青黑体简体中文 W3,微软雅黑, sans-serif;
+.box1 {
+    font-family: "苹方 常规", 冬青黑体简体中文 W3, 微软雅黑, sans-serif;
     color: white;
-    position:absolute;
-    width:800px; 
-    height:400px; 
-    left:198px; 
-    top:100px
-} 
+    position: absolute;
+    width: 800px;
+    height: 400px;
+    left: 198px;
+    top: 100px
+}
+
+.box1 {
+    font-size: 50px;
+    color: #ffffff
+}
+
+.box1 div:first-child {
+    font-size: 120px;
+    color: #ffffff;
+}
+
+.box1 div:last-child {
+    font-size: 50px;
+    color: #0099ff;
+}
+
+.box1 div:last-child a {
+    font-size: 50px;
+}
+
+
+a:link {
+    color: #00ccff
+}
+
+/* 未访问的链接 */
+a:visited {
+    color: #00ccff
+}
+
+/* 已访问的链接 */
+a:hover {
+    color: #00ccff
+}
+
+/* 鼠标移动到链接上 */
+a:active {
+    color: #00ccff
+}
+
+/* 选定的链接 */
