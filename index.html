@@ -1,36 +1,53 @@
+<!DOCTYPE html>
 <html lang="zh">
 <head>
+    <meta name="renderer" content="webkit"/>
+    <meta name="force-rendering" content="webkit"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1"/>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
     <title>Loading</title>
 
-    <script type="text/javascript">
-        var type = navigator.appName;
-        if (type === "Netscape") {
-            var lang = navigator.language;//获取浏览器配置语言，支持非IE浏览器
-        } else {
-            var lang = navigator.userLanguage;//获取浏览器配置语言，支持IE5+ == navigator.systemLanguage
-        }
-        lang = lang.substr(0, 2);//获取浏览器配置语言前两位
-        if (lang === "zh") {
-            //alert(lang);
-            //window.location.replace('url');//中文编码时打开链接
-            window.location.href="index_zh-cn.html";
-        } else if (lang === "en") {
-            window.location.href="index_en.html";
-            //window.location.replace('url');
-        } else {//其他语言编码时打开以下链接
-            //window.location.replace('url');
-            window.location.href="index_zh-cn.html";
-        }
-    </script>
+    <link rel="stylesheet" href="//stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 </head>
-
 <body>
-
-<div>
-    对于正确的操作，该应用需要使用 JavaScript。请 <a href="https://www.enable-javascript.com/" target="_blank" rel="noreferrer noopener">启用
-    JavaScript</a>，并重新加载页面。
+<div class="loader">
+    <div class="page-loader"></div>
 </div>
+
+<div id="body" style="display: none;"></div>
+<!-- Modal Body -->
+<div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true"
+     style="display: none;">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="ModalLabel"></h5>
+            </div>
+            <div class="modal-body"></div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal End -->
 </body>
+
+<script src="//cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+<script>
+    const $ = window.$;
+    window.app = null;
+    window.home = null;
+    $.ajaxSetup({
+        cache: true
+    });
+    $.getScript("//stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js");
+
+    $.getScript("/js/index.js");
+
+</script>
 </html>
-
-

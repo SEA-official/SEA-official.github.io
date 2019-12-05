@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Loading</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700|Roboto:300,400' rel='stylesheet'
+          type='text/css'>
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="css/icomoon.css">
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="//stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <!-- Modernizr JS -->
+    <script src="js/modernizr-2.6.2.min.js"></script>
+
+</head>
+<body>
+<div class="box-wrap">
+    <header role="banner" id="fh5co-header">
+        <div class="container">
+            <nav class="navbar navbar-default noSelect">
+                <div class="col-md-12 row">
+                    <div class="col-md-4">
+                        <div class="fh5co-navbar-brand">
+                            <a class="fh5co-logo"><img src="pic/brand-nav.png" alt="Closest Logo"></a>
+                        </div>
+                    </div>
+                    <div class="col-md-auto">
+                        <ul class="nav text-center">
+                            <!--head-->
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- END: header -->
+    <section id="intro">
+        <div class="container">
+            <div class="row">
+                <div class="m-auto text-center">
+                    <div class="intro animate-box">
+                        <!--intro-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main id="main">
+        <div class="container">
+            <!--main-->
+        </div>
+    </main>
+
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <!--services-->
+            </div>
+        </div>
+    </section>
+
+
+    <footer id="footer" role="contentinfo">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <div class="footer-widget">
+                        <p class="pull-left"><small></small></p>
+                        <!--left-->
+                        <p class="pull-right"><small></small></p>
+                        <!--right-->
+                    </div>
+                    <!--footer-->
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+<!-- END: box-wrap -->
+
+<!-- Modal Body -->
+<div class="modal fade" id="Modal" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true"
+     style="display: none;">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="ModalLabel"></h5>
+            </div>
+            <div class="modal-body"></div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal End -->
+</body>
+<!-- jQuery -->
+<script src="//cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+
+<script>
+    const $ = window.$;
+    window.app = null;
+    window.home = null;
+    $.ajaxSetup({
+        cache: true
+    });
+    $.when(
+        // jQuery Easing
+        $.getScript("//cdn.bootcss.com/jquery-easing/1.4.1/jquery.easing.min.js"),
+        // Bootstrap
+        $.getScript("//stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"),
+        // Waypoints
+        $.getScript("js/jquery.waypoints.min.js")
+    ).done(function () {
+        // Main JS (Do not remove)
+        $.getScript("js/main.js");
+
+        $.getScript("/js/index.js");
+    });
+</script>
+</html>
+
