@@ -9,6 +9,9 @@
                 return;
         }
     };
+    c.log = function (text) {
+        console.log(text);
+    };
 
     c.getRoute = function (hash) {
         hash = hash || window.location.hash;
@@ -172,7 +175,7 @@
                 });
             },
             error: function (data) {
-                console.log(data.status + ' ' + data.statusText);
+                c.log(data.status + ' ' + data.statusText);
                 c.Modal_show(data.status + ' ' + data.statusText, data.responseText);
             }
         });
@@ -203,8 +206,15 @@
         c.route(c.getRoute($(this).attr('href')));
     };
 
+    $(window).on('popstate', function () {
+        let r = c.getRoute();
+        c.log(r);
+        if (r != null)
+            c.route(r);
+    });
+    
     let r = c.getRoute();
-    console.log(r);
+    c.log(r);
     if (r != null)
         c.route(r);
 
