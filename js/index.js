@@ -212,7 +212,7 @@
         if (r != null)
             c.route(r);
     });
-    
+
     let r = c.getRoute();
     c.log(r);
     if (r != null)
