@@ -18,6 +18,35 @@
         "<p>2017年2月2日 《官方声明》</p>",
         "<p>2017年2月3日 组织网页开始制作</p>"
     ],
+    "work":[
+        {
+            "class":"col-md-12",
+            "image":"pic/蓝底白鹰旗.jpg",
+            "title-h3":"蓝底白鹰旗",
+            "title-span":"启用于2016年1月17日"
+        }
+        
+    ],
+    "product":{
+        "heading":"了解更多",
+        "subtext":"总部会议室、管理层咨会、分部会议室作为总部的常设机构，它们之间有着密不可分的联系，促成总部各部门的有机统一。了解更多关于它们的知识，更好地融入组织。",
+        "block":[
+            {
+                "title":"总部会议室",
+                "image":"pic/work-2.jpg",
+                "paragraph":"总部会议室是总部的常设机构，也是事实上的组织最高权力机关。",
+                "link_title":"了解更多...",
+                "link":"#/headquarters/profile"
+            },
+            {
+                "title":"分部会议室",
+                "image":"pic/work-1.jpg",
+                "paragraph":"分部会议室是总部中各分部部长及分部代表辅助决策的重要总部议事机构，更能推进分部的发展。",
+                "link_title":"了解更多...",
+                "link":"#/subsections/profile"
+            }
+        ]
+    },
     "services":[
         {
             "icon":"icon-command",

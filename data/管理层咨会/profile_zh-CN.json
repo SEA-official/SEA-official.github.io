@@ -1,0 +1,40 @@
+{
+    "title":"管理层咨会-神圣不可侵犯的激进光明组织",
+    "head":[
+        {"type":"active","link":"#/headquarters/profile","title":"简介"},
+        {"type":"normal","link":"#/headquarters/history","title":"历史"},
+        {"type":"normal","link":"#/headquarters/headquarters","title":"职务"},
+        {"type":"return","title":"返回主页"}
+    ],
+    "intro":"<h2>为群策群力，充分发掘人才，<br>总部设立了管理层咨会，参与总部议事，<br>作为总部会议室的扩大与补充。</h2>",
+    "work":[
+        {
+            "class":"col-md-12",
+            "image":"pic/蓝底白鹰旗.jpg",
+            "title-h3":"蓝底白鹰旗",
+            "title-span":"启用于2016年1月17日"
+        }
+        
+    ],
+    "services":[
+        {
+            "icon":"icon-command",
+            "title":"总部重要议事机构",
+            "content":"由总部会议室全权负责<br>到管理层咨会参与议事<br>博采众长，群策群力，共议要事"
+        },
+        {
+            "icon":"icon-drop2",
+            "title":"组织精神集中体现",
+            "content":"管理层咨会甄选组织人才<br>积极广泛吸纳外部人才<br>最能够体现组织精神的巨大内涵"
+        },
+        {
+            "icon":"icon-anchor",
+            "title":"凝聚组织力量核心",
+            "content":"成立于2015年10月11日<br>能够更好地集中组织成员的智慧<br>发现更多的新世纪的人才"
+        }
+    ],
+    "footer":{
+        "left":"神圣不可侵犯的激进光明组织·总部会议室暨管理层咨会·信息技术部·激光工作室 制作",
+        "right":"Designed by Corn"
+    }
+}
